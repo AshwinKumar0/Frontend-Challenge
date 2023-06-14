@@ -18,42 +18,39 @@
       padding: 0%;
       box-sizing: border-box;
     }
-   #main-container{
+   .main-container{
     /* border: 1px solid; */
     box-shadow: 0px 2px 10px 2px rgb(178, 177, 177);
     border-radius: 5px;
     width: 80%;
     display: flex;
-    height: 80vh;
-    margin: 50px auto;
+    height: 90vh;
+    margin: 30px auto;
     background-color: hsl(212, 45%, 89%);
    }
 
-   #container{
+   .container{
     box-shadow: 0px 2px 5px 2px rgb(178, 177, 177);
     border-radius:12px;
-    width: 300px;
+    width:300px;
     height: 70%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
     background:hsl(0, 0%, 100%);
 
    }
    
-   #qr{
+   .qr{
     width:90%;
     border-radius: 12px;
     overflow: hidden;
-    /* border: 2px solid red; */
     flex-basis:60%;
     margin: 13px auto;
     display: flex;
     margin-bottom: 5px;
    }
-   #info{
-    /* border: green 2px solid; */
+   .info{
     width: 80%;
     margin: 10px auto;
     display: flex;
@@ -61,7 +58,7 @@
     gap: 20px;
 
    }
-   h2{
+   h1{
     font-size: 15px;
    font-family: 'Outfit', sans-serif;
    font-size: 700;
@@ -84,29 +81,27 @@
    }
 
    @media screen and (max-width: 375px) {
-    #container{
+    .container{
       width:80%;
     }
-    #main-container{
-      min-width: 300px;
+    .main-container{
+      min-width:300px;
     }
    }
   
   </style>
 </head>
 <body>
-<div id="main-container">
-  <div id="container">
-    <div id="qr">
-     <img src="images/image-qr-code.png" alt="">
+<main class="main-container">
+  <div class="container">
+    <div class="qr">
+     <img src="images/image-qr-code.png" alt="QR code image">
     </div>
-    <div id="info">
-      <h2>Improve your front-end skills by building projects</h2>
+    <div class="info">
+      <h1>Improve your front-end skills by building projects</h1>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
-
-  
   </div>
-</div>
+</main>
 </body>
 </html>
