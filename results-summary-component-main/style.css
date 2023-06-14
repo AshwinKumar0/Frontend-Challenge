@@ -115,12 +115,12 @@ h4{
     
 }
 .scores-name{
-    border: 1px solid;
+    /* border: 1px solid; */
     padding:10px;
     display: flex;
     width: 80%;
     align-self: center;
-    height: 60px;
+    height: 40px;
     border-radius: 5px;
 }
 
