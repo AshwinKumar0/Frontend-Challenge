@@ -78,7 +78,7 @@ h2{
     font-size: 0.8rem;
     display: flex;
     gap: 20px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding-top: 40px;
     flex-direction: column;
 }
