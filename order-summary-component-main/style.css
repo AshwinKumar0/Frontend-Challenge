@@ -1,0 +1,136 @@
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Red Hat Display', sans-serif;
+    background: var(--Very-pale-blue) url(./images/pattern-background-desktop.svg) no-repeat;
+    background-size: 100%;
+    background-color: var(--Pale-blue);
+
+}
+.Container{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 2px 10px grey;
+}
+.picture{
+    display: flex;
+    
+}
+
+.picture img{
+    width: 100%;
+
+}
+
+.desc{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    padding: 15px;
+    gap: 20px;
+
+}
+h1{
+    font-size: 24px;
+    color: var(--Dark-blue);
+}
+.desc p{
+ font-size: 16px;
+ line-height: 1.5rem;
+ color: var(--Desaturated-blue);
+}
+.Price{
+    display: flex;
+    padding: 15px;
+}
+
+
+#AnnualPlan{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-left: 10px;
+    text-align: center;
+}
+#plan-title{
+    font-weight: 700;
+}
+#plan-amount{
+    font-size: 1rem;
+    color: var(--Desaturated-blue);
+}
+#Change{
+    display: flex;
+    align-items: center;  
+    
+
+}
+#Change a:hover{
+    text-decoration: none;
+    color: var(--Bright-blue);
+}
+.btns{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+
+button{
+    width: 85%;
+    font-family: 'Red Hat Display', sans-serif;
+    box-shadow: 0px 1px 5px gray;
+    align-self: center;
+    padding: 15px;
+    margin:20px;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+    color: white;
+    border: 0;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+button:hover{
+    background-color: hsla(245, 75%, 52%, 0.723);
+    cursor: pointer;
+}
+.Cancel{
+text-align: center;
+margin-bottom: 30px;
+text-decoration: none;
+color: var(--Desaturated-blue);
+font-size: 15px;
+font-weight: 700;
+}
+.Cancel:hover{
+    cursor: pointer;
+    color:var(--Dark-blue);
+}
+@media screen and (min-width: 400px) {
+    .desc{
+        padding-inline: 30px;
+        font-size: 10px;
+    }
+    .Container{
+        width: 380px;
+    }
+    .Price{
+        padding-inline:40px ;
+    }
+}
