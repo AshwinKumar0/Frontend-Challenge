@@ -6,10 +6,17 @@
 
 }
 
+
 body{
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     background-color: var(--Light-Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* border: 2px solid; */
+
 }
 
 .OuterContainer{
@@ -43,7 +50,7 @@ h1{
     font-size: 1.7rem;
     color: var(--Cyan);
 }
-.First-Half h3{
+.First-Half h2{
     color: var(--Bright-Yellow);
 }
 .Second-Half{
