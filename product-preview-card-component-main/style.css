@@ -1,0 +1,148 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    color: var(--Very-dark-blue);
+    max-width: 250px;
+    line-height: 1.8rem;
+    min-width: 150px;
+
+}
+.desc{
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5rem;
+    width: 80%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 90%;
+    margin-inline: auto;
+    min-width: 250px;
+    box-shadow: 0px 2px 4px 0px;
+}
+
+.first{
+    background-image: url(./images/image-product-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+
+   
+}
+.second{
+    padding:20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--White);
+
+    
+
+}
+
+.perfume{
+   
+    color: var(--Dark-grayish-blue);
+    letter-spacing:5px;
+}
+
+.price{
+   
+    display: flex;
+    gap: 20px;
+
+}
+.discount-price{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    color: var(--Dark-cyan);
+}
+
+.original-price{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+button{
+    border: none;
+    padding: 15px;
+    background-color: var(--Dark-cyan);
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0px 1px 5px 0px grey;
+}
+
+
+
+button span{
+  
+    display: flex;
+
+}
+button span img{
+
+    width: 1.1rem;
+
+
+}
+
+@media  screen and (min-width:500px) {
+    .container{
+        flex-direction: row;
+        height: 500px;
+        max-width:700px;
+        min-width: 500px;
+        
+    }
+    .first{
+        background-image: url(./images/image-product-desktop.jpg);
+        flex-basis: 50%;
+        height: 100%;
+        min-width: 250px;
+        
+
+
+    }
+
+    .second{
+        flex-basis: 50%;
+        min-width: 250px;
+        justify-content: space-around;
+    }
+}
