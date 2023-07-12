@@ -140,6 +140,12 @@ button span img{
 
     }
 
+    .second h1{
+        
+        line-height: 2rem;
+        font-size: 2rem;
+    }
+
     .second{
         flex-basis: 50%;
         min-width: 250px;
