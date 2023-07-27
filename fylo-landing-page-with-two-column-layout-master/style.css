@@ -378,6 +378,8 @@ li a:hover{
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 0%;
+    /* border: 2px solid; */
+    margin-bottom: 10px;
     
    }
    input,button{
