@@ -367,8 +367,9 @@ li a:hover{
     width: 150px;
    }
    .bgImage{
-    height: 100px;
+    height: 150px;
     width: 100%;
+    /* border: 2px solid; */
     background-image: url(./images/bg-curve-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
